@@ -53,7 +53,7 @@
       <article>
         <p class="num">On-call</p>
         <p class="label">not a handoff</p>
-        <p>SLOs and postmortems change the infrastructure, not only the runbook.</p>
+        <p>Known alarms heal through Harness. The page is for what that cannot explain.</p>
       </article>
       <article>
         <p class="num">One path</p>
@@ -105,9 +105,9 @@
       <article class="case">
         <p class="kicker">Reliability</p>
         <h3>Operated, not just deployed</h3>
-        <p>I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. The work after an incident is the part that matters: root cause, a blameless write-up, and a change to the module or the alert so the same page does not come back. Toil that survives two incidents gets automated.</p>
+        <p>I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. AI observability sits on that telemetry: it has to explain the alarm, not add another dashboard. Alarms with a known fix take an autonomous healing path in Harness and remediate themselves. A novel failure still pages me. The write-up afterward changes the module or the alert, so the same page does not come back.</p>
         <ul class="tags">
-          <li>SLOs</li><li>Prometheus</li><li>On-call</li><li>OpenTelemetry</li><li>Postmortems</li>
+          <li>AI observability</li><li>Harness</li><li>Autonomous remediation</li><li>SLOs</li><li>OpenTelemetry</li>
         </ul>
       </article>
 
@@ -135,7 +135,7 @@
         <ul>
           <li>Own the path from a change to production: Terraform and Ansible across AWS, Azure, VMware, and OpenStack, with drift and cost visible in the review.</li>
           <li>Run Kubernetes on OpenShift, EKS, and AKS so teams deploy with Helm and Argo CD, and roll back without a bridge call.</li>
-          <li>Carry the pager. SLOs, Prometheus, Grafana, and OpenTelemetry decide what we fix. Postmortems change the platform.</li>
+          <li>Carry the pager. SLOs, Prometheus, Grafana, and OpenTelemetry decide what we fix. AI observability and Harness heal the alarms that already have a known remediation. Postmortems change the platform.</li>
           <li>Put agentic workflows on that path. LangGraph and LangChain, tool calling, retrieval, guardrails, and a human gate before anything non-deterministic is released.</li>
         </ul>
       </article>
@@ -203,7 +203,7 @@
         </article>
         <article>
           <h3>CI/CD</h3>
-          <p>Jenkins, GitLab CI, GitHub Actions, Git, Bitbucket, Nexus, blue-green, canary, Trivy</p>
+          <p>Harness, Jenkins, GitLab CI, GitHub Actions, Git, Bitbucket, Nexus, blue-green, canary, Trivy</p>
         </article>
         <article>
           <h3>Kubernetes</h3>
@@ -215,7 +215,7 @@
         </article>
         <article>
           <h3>SRE</h3>
-          <p>SLIs/SLOs, error budgets, Prometheus, Grafana, ELK, OpenTelemetry, on-call, MTTR, postmortems</p>
+          <p>SLIs/SLOs, error budgets, Prometheus, Grafana, ELK, OpenTelemetry, AI observability, Harness, autonomous healing, alarm remediation, on-call, MTTR, postmortems</p>
         </article>
         <article>
           <h3>Agentic AI</h3>
