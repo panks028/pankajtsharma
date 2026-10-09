@@ -12,24 +12,24 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Outfit:wght@380;460;560&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,560;1,6..72,450&family=Source+Sans+3:wght@400;560;650&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="#top">Pankaj T Sharma</a>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="cover" id="top">
+    <header class="nav">
+      <a class="brand" href="#top">Pankaj T Sharma</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <main id="top">
     <section class="hero">
       <p class="eyebrow">Platform engineering · Site reliability · Agentic systems</p>
-      <h1>Pankaj T Sharma</h1>
+      <h1>Pankaj <em>T Sharma</em></h1>
       <p class="lede">I have spent fifteen years in production. The work is the platform teams actually ship on, and the operating discipline that keeps it up. Agentic systems now run on that same path, not beside it.</p>
       <p class="status">Open to senior platform, SRE, and agentic roles where the person who designs the system also runs it.</p>
       <p class="meta">
@@ -38,223 +38,218 @@
         <a href="https://www.linkedin.com/in/pankaj-devops/" target="_blank" rel="noopener">LinkedIn</a>
       </p>
     </section>
+  </div>
 
-    <section class="stats" aria-label="At a glance">
-      <article>
-        <p class="num">15</p>
-        <p class="label">years in production</p>
-        <p>Still the person who provisions, releases, and takes the page.</p>
-      </article>
-      <article>
-        <p class="num">2020</p>
-        <p class="label">current platform</p>
-        <p>At Amdocs since then: delivery, Kubernetes, reliability, and agentic workloads on one stack.</p>
-      </article>
-      <article>
-        <p class="num">On-call</p>
-        <p class="label">not a handoff</p>
-        <p>Known alarms heal through Harness. The page is for what that cannot explain.</p>
-      </article>
-      <article>
-        <p class="num">One path</p>
-        <p class="label">for agents and releases</p>
-        <p>Multi-agent and retrieval workloads ship through the same CI/CD and clusters.</p>
-      </article>
-    </section>
-
+  <main>
     <section class="about">
-      <h2>About</h2>
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2>The same job, at a larger scale.</h2>
+      </div>
       <p class="wide">I came up through Linux and cloud operations, then spent the last several years making delivery repeatable: infrastructure in code, a Kubernetes path people can use, and an on-call loop that feeds back into the design. The agentic work is the same job. A workflow that can call tools and retrieve knowledge still has to be provisioned, released, observed, and stopped.</p>
-      <div class="principles">
-        <article>
+      <ol class="principles">
+        <li>
           <h3>If it needs a ticket, it is not a platform.</h3>
           <p>Engineers should provision, deploy, and roll back without waiting on me. Terraform, pipelines, and GitOps exist so the exception is rare, not so the happy path stays manual.</p>
-        </article>
-        <article>
+        </li>
+        <li>
           <h3>Autonomy is earned.</h3>
           <p>An agent gets tool access and memory after evaluation, guardrails, and a human gate exist. Deterministic release steps stay in charge. The model does not get a private way into production.</p>
-        </article>
-        <article>
+        </li>
+        <li>
           <h3>Incidents are design input.</h3>
           <p>A postmortem that only updates a runbook will happen again. The useful ones change the module, the pipeline, or the alert threshold.</p>
-        </article>
-      </div>
+        </li>
+      </ol>
     </section>
 
     <section id="work">
-      <h2>Selected work</h2>
-      <p class="section-lead">Each of these is a problem I have already run in production, the way I closed it, and the standard I hold it to.</p>
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Four problems already running in production.</h2>
+      </div>
 
       <article class="case">
-        <p class="kicker">Platform</p>
-        <h3>One way to stand an environment up</h3>
-        <p class="beat"><span>The problem</span> The estate spans AWS, Azure, and what is still on VMware and OpenStack. Each one had its own way to stand an environment up, and the bootstrap lived in someone’s notes.</p>
-        <p class="beat"><span>What I run</span> Terraform holds the shape of the environment, including remote state and drift. Ansible holds configuration, patching, and that bootstrap. Multi-AZ, recovery, and cost are part of the module, reviewed with the change.</p>
-        <p class="beat"><span>The standard</span> A platform nobody can afford, or that only one person can rebuild, is not finished.</p>
-        <ul class="tags">
-          <li>Terraform</li><li>Ansible</li><li>AWS</li><li>Azure</li><li>FinOps</li>
-        </ul>
+        <header>
+          <p class="index">01</p>
+          <p class="kicker">Platform</p>
+          <h3>One way to stand an environment up</h3>
+        </header>
+        <div class="beats">
+          <p><span>The problem</span> The estate spans AWS, Azure, and what is still on VMware and OpenStack. Each one had its own way to stand an environment up, and the bootstrap lived in someone’s notes.</p>
+          <p><span>What I run</span> Terraform holds the shape of the environment, including remote state and drift. Ansible holds configuration, patching, and that bootstrap. Multi-AZ, recovery, and cost are part of the module, reviewed with the change.</p>
+          <p><span>The standard</span> A platform nobody can afford, or that only one person can rebuild, is not finished.</p>
+        </div>
+        <p class="tags">Terraform · Ansible · AWS · Azure · FinOps</p>
       </article>
 
       <article class="case">
-        <p class="kicker">Delivery</p>
-        <h3>A release path with a rollback</h3>
-        <p class="beat"><span>The problem</span> Clusters on OpenShift, EKS, and AKS only help if a team can ship without a specialist in the room.</p>
-        <p class="beat"><span>What I run</span> Helm and Argo CD are that path. Progressive delivery is blue-green or canary. Image scanning happens before the rollout. The service mesh and RBAC keep production access deliberate. Jenkins, GitLab CI, GitHub Actions, and Harness are the gates.</p>
-        <p class="beat"><span>The standard</span> The rollback does not require me.</p>
-        <ul class="tags">
-          <li>Kubernetes</li><li>Argo CD</li><li>Harness</li><li>Istio</li><li>Trivy</li>
-        </ul>
+        <header>
+          <p class="index">02</p>
+          <p class="kicker">Delivery</p>
+          <h3>A release path with a rollback</h3>
+        </header>
+        <div class="beats">
+          <p><span>The problem</span> Clusters on OpenShift, EKS, and AKS only help if a team can ship without a specialist in the room.</p>
+          <p><span>What I run</span> Helm and Argo CD are that path. Progressive delivery is blue-green or canary. Image scanning happens before the rollout. The service mesh and RBAC keep production access deliberate. Jenkins, GitLab CI, GitHub Actions, and Harness are the gates.</p>
+          <p><span>The standard</span> The rollback does not require me.</p>
+        </div>
+        <p class="tags">Kubernetes · Argo CD · Harness · Istio · Trivy</p>
       </article>
 
       <article class="case">
-        <p class="kicker">Reliability</p>
-        <h3>Operated, not just deployed</h3>
-        <p class="beat"><span>The problem</span> A dashboard that does not explain the alarm is another page to ignore. A known failure that still needs a person is toil.</p>
-        <p class="beat"><span>What I run</span> I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. AI observability sits on that telemetry and has to explain the alarm. Alarms with a known fix take an autonomous healing path in Harness and remediate themselves.</p>
-        <p class="beat"><span>The standard</span> A novel failure still pages me. The write-up afterward changes the module or the alert, so the same page does not come back.</p>
-        <ul class="tags">
-          <li>AI observability</li><li>Harness</li><li>Autonomous remediation</li><li>SLOs</li><li>OpenTelemetry</li>
-        </ul>
+        <header>
+          <p class="index">03</p>
+          <p class="kicker">Reliability</p>
+          <h3>Operated, not just deployed</h3>
+        </header>
+        <div class="beats">
+          <p><span>The problem</span> A dashboard that does not explain the alarm is another page to ignore. A known failure that still needs a person is toil.</p>
+          <p><span>What I run</span> I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. AI observability sits on that telemetry and has to explain the alarm. Alarms with a known fix take an autonomous healing path in Harness and remediate themselves.</p>
+          <p><span>The standard</span> A novel failure still pages me. The write-up afterward changes the module or the alert, so the same page does not come back.</p>
+        </div>
+        <p class="tags">AI observability · Harness · Autonomous remediation · SLOs · OpenTelemetry</p>
       </article>
 
       <article class="case">
-        <p class="kicker">Agentic systems</p>
-        <h3>Agents that have to earn production</h3>
-        <p class="beat"><span>The problem</span> A workflow that can call tools and retrieve knowledge still has to be provisioned, released, observed, and stopped. Left to the prompt, it will not be.</p>
-        <p class="beat"><span>What I run</span> Multi-agent workflows in LangGraph, LangChain, MCPs, and AgentCore. Supervisor–worker, hierarchical, and plan-and-execute when the task actually splits that way. State, memory, and tool calling are designed. Retrieval is vector search over enterprise knowledge, and an answer that cannot cite it does not ship. Evaluation, guardrails, and a human gate sit in the same CI/CD path as any other release. Cursor skills and hooks keep that path reproducible for the people writing the workflows.</p>
-        <p class="beat"><span>The standard</span> The model does not get a private way into production.</p>
-        <ul class="tags">
-          <li>LangGraph</li><li>RAG</li><li>Guardrails</li><li>Human in the loop</li><li>CI/CD</li>
-        </ul>
+        <header>
+          <p class="index">04</p>
+          <p class="kicker">Agentic systems</p>
+          <h3>Agents that have to earn production</h3>
+        </header>
+        <div class="beats">
+          <p><span>The problem</span> A workflow that can call tools and retrieve knowledge still has to be provisioned, released, observed, and stopped. Left to the prompt, it will not be.</p>
+          <p><span>What I run</span> Multi-agent workflows in LangGraph, LangChain, MCPs, and AgentCore. Supervisor–worker, hierarchical, and plan-and-execute when the task actually splits that way. State, memory, and tool calling are designed. Retrieval is vector search over enterprise knowledge, and an answer that cannot cite it does not ship. Evaluation, guardrails, and a human gate sit in the same CI/CD path as any other release. Cursor skills and hooks keep that path reproducible for the people writing the workflows.</p>
+          <p><span>The standard</span> The model does not get a private way into production.</p>
+        </div>
+        <p class="tags">LangGraph · RAG · Guardrails · Human in the loop · CI/CD</p>
       </article>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
+      <div class="section-head">
+        <p class="eyebrow">Experience</p>
+        <h2>Fifteen years, still on the system.</h2>
+      </div>
 
       <article class="role">
-        <header>
-          <div>
-            <h3>Amdocs</h3>
-            <p>Platform engineer. Delivery, reliability, and agentic workloads.</p>
-          </div>
-          <p class="when">Jun 2020 — Present<br>Pune</p>
-        </header>
-        <ul>
-          <li>Own the path from a change to production: Terraform and Ansible across AWS, Azure, VMware, and OpenStack, with drift and cost visible in the review.</li>
-          <li>Run Kubernetes on OpenShift, EKS, and AKS so teams deploy with Helm and Argo CD, and roll back without a bridge call.</li>
-          <li>Carry the pager. SLOs, Prometheus, Grafana, and OpenTelemetry decide what we fix. AI observability and Harness heal the alarms that already have a known remediation. Postmortems change the platform.</li>
-          <li>Put agentic workflows on that path. LangGraph and LangChain, tool calling, retrieval, guardrails, and a human gate before anything non-deterministic is released.</li>
-        </ul>
+        <p class="when">2020 — Present<br>Pune</p>
+        <div>
+          <h3>Amdocs</h3>
+          <p class="role-line">Platform engineer. Delivery, reliability, and agentic workloads.</p>
+          <ul>
+            <li>Own the path from a change to production: Terraform and Ansible across AWS, Azure, VMware, and OpenStack, with drift and cost visible in the review.</li>
+            <li>Run Kubernetes on OpenShift, EKS, and AKS so teams deploy with Helm and Argo CD, and roll back without a bridge call.</li>
+            <li>Carry the pager. SLOs, Prometheus, Grafana, and OpenTelemetry decide what we fix. AI observability and Harness heal the alarms that already have a known remediation. Postmortems change the platform.</li>
+            <li>Put agentic workflows on that path. LangGraph and LangChain, tool calling, retrieval, guardrails, and a human gate before anything non-deterministic is released.</li>
+          </ul>
+        </div>
       </article>
 
       <article class="role">
-        <header>
-          <div>
-            <h3>Teradata India</h3>
-            <p>Technical consultant, DevOps</p>
-          </div>
-          <p class="when">Apr 2018 — Jun 2020<br>Pune</p>
-        </header>
-        <ul>
-          <li>Took clusters from a bootstrap script to a platform: OS provisioning, Terraform, and Ansible, then a CI system teams could release through.</li>
-          <li>Left behind reusable roles for patching and environment build, so the next cluster was not a new project.</li>
-        </ul>
+        <p class="when">2018 — 2020<br>Pune</p>
+        <div>
+          <h3>Teradata India</h3>
+          <p class="role-line">Technical consultant, DevOps</p>
+          <ul>
+            <li>Took clusters from a bootstrap script to a platform: OS provisioning, Terraform, and Ansible, then a CI system teams could release through.</li>
+            <li>Left behind reusable roles for patching and environment build, so the next cluster was not a new project.</li>
+          </ul>
+        </div>
       </article>
 
       <article class="role">
-        <header>
-          <div>
-            <h3>Amdocs</h3>
-            <p>Subject matter expert</p>
-          </div>
-          <p class="when">Mar 2016 — Apr 2018</p>
-        </header>
-        <ul>
-          <li>The years the estate became automatable: Ansible and BladeLogic for configuration, Satellite for patching, and the first Kubernetes platforms taken from a proof of concept into something we would run.</li>
-        </ul>
+        <p class="when">2016 — 2018</p>
+        <div>
+          <h3>Amdocs</h3>
+          <p class="role-line">Subject matter expert</p>
+          <ul>
+            <li>The years the estate became automatable: Ansible and BladeLogic for configuration, Satellite for patching, and the first Kubernetes platforms taken from a proof of concept into something we would run.</li>
+          </ul>
+        </div>
       </article>
 
       <article class="role">
-        <header>
-          <div>
-            <h3>Xcaliber Infotech</h3>
-            <p>Senior Systems Engineer</p>
-          </div>
-          <p class="when">Dec 2015 — Feb 2016</p>
-        </header>
-        <ul>
-          <li>Designed the AWS side of a small estate for availability: networking, scaling, and the alarms that told us it was actually up.</li>
-        </ul>
+        <p class="when">2015 — 2016</p>
+        <div>
+          <h3>Xcaliber Infotech</h3>
+          <p class="role-line">Senior Systems Engineer</p>
+          <ul>
+            <li>Designed the AWS side of a small estate for availability: networking, scaling, and the alarms that told us it was actually up.</li>
+          </ul>
+        </div>
       </article>
 
       <article class="role">
-        <header>
-          <div>
-            <h3>Atos India</h3>
-            <p>Associate System Engineer</p>
-          </div>
-          <p class="when">May 2012 — Dec 2015</p>
-        </header>
-        <ul>
-          <li>Where the operating habit started. Linux in production, incidents worked to a cause, and the write-up left so the next person was not guessing.</li>
-        </ul>
+        <p class="when">2012 — 2015</p>
+        <div>
+          <h3>Atos India</h3>
+          <p class="role-line">Associate System Engineer</p>
+          <ul>
+            <li>Where the operating habit started. Linux in production, incidents worked to a cause, and the write-up left so the next person was not guessing.</li>
+          </ul>
+        </div>
       </article>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <article>
-          <h3>Platform &amp; IaC</h3>
-          <p>Terraform, remote state, drift detection, Ansible, YAML, infrastructure automation, FinOps</p>
-        </article>
-        <article>
-          <h3>CI/CD</h3>
-          <p>Harness, Jenkins, GitLab CI, GitHub Actions, Git, Bitbucket, Nexus, blue-green, canary, Trivy</p>
-        </article>
-        <article>
-          <h3>Kubernetes</h3>
-          <p>EKS, AKS, OpenShift, Docker, Helm, Argo CD, Istio, RBAC, GitOps</p>
-        </article>
-        <article>
-          <h3>Cloud</h3>
-          <p>AWS, Azure, Lambda, IAM, multi-AZ, disaster recovery, VMware, OpenStack, secrets management</p>
-        </article>
-        <article>
-          <h3>SRE</h3>
-          <p>SLIs/SLOs, error budgets, Prometheus, Grafana, ELK, OpenTelemetry, AI observability, Harness, autonomous healing, alarm remediation, on-call, MTTR, postmortems</p>
-        </article>
-        <article>
-          <h3>Agentic AI</h3>
-          <p>LangGraph, LangChain, MCPs, AgentCore, multi-agent orchestration, RAG, vector search, guardrails, tool calling, Cursor</p>
-        </article>
-        <article>
-          <h3>Engineering</h3>
-          <p>Python, Bash, Linux, Red Hat, human-in-the-loop design</p>
-        </article>
+      <div class="section-head">
+        <p class="eyebrow">Skills</p>
+        <h2>What the work is actually made of.</h2>
       </div>
+      <dl class="skills">
+        <div>
+          <dt>Platform &amp; IaC</dt>
+          <dd>Terraform, remote state, drift detection, Ansible, YAML, infrastructure automation, FinOps</dd>
+        </div>
+        <div>
+          <dt>CI/CD</dt>
+          <dd>Harness, Jenkins, GitLab CI, GitHub Actions, Git, Bitbucket, Nexus, blue-green, canary, Trivy</dd>
+        </div>
+        <div>
+          <dt>Kubernetes</dt>
+          <dd>EKS, AKS, OpenShift, Docker, Helm, Argo CD, Istio, RBAC, GitOps</dd>
+        </div>
+        <div>
+          <dt>Cloud</dt>
+          <dd>AWS, Azure, Lambda, IAM, multi-AZ, disaster recovery, VMware, OpenStack, secrets management</dd>
+        </div>
+        <div>
+          <dt>SRE</dt>
+          <dd>SLIs/SLOs, error budgets, Prometheus, Grafana, ELK, OpenTelemetry, AI observability, Harness, autonomous healing, alarm remediation, on-call, MTTR, postmortems</dd>
+        </div>
+        <div>
+          <dt>Agentic AI</dt>
+          <dd>LangGraph, LangChain, MCPs, AgentCore, multi-agent orchestration, RAG, vector search, guardrails, tool calling, Cursor</dd>
+        </div>
+        <div>
+          <dt>Engineering</dt>
+          <dd>Python, Bash, Linux, Red Hat, human-in-the-loop design</dd>
+        </div>
+      </dl>
     </section>
 
     <section class="edu">
-      <h2>Certifications &amp; education</h2>
+      <div class="section-head">
+        <p class="eyebrow">Credentials</p>
+        <h2>Certifications &amp; education</h2>
+      </div>
       <ul>
         <li>AWS Certified SysOps Administrator – Associate</li>
         <li>Microsoft Certified: Azure Fundamentals</li>
         <li>B.Sc. (Computers), Mumbai University — 2011</li>
       </ul>
     </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Pune, India. Open to remote.</p>
-      <p>
-        <a href="mailto:panks028@gmail.com">panks028@gmail.com</a>
-        <a href="tel:+917506145451">+91 75061 45451</a>
-        <a href="https://www.linkedin.com/in/pankaj-devops/" target="_blank" rel="noopener">linkedin.com/in/pankaj-devops</a>
-      </p>
-    </section>
   </main>
+
+  <footer class="close" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Pune, India. Open to remote.</h2>
+    <p class="meta">
+      <a href="mailto:panks028@gmail.com">panks028@gmail.com</a>
+      <a href="tel:+917506145451">+91 75061 45451</a>
+      <a href="https://www.linkedin.com/in/pankaj-devops/" target="_blank" rel="noopener">linkedin.com/in/pankaj-devops</a>
+    </p>
+  </footer>
 </body>
 </html>
