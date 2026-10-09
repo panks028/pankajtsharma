@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pankaj T Sharma | DevOps · SRE · AI Platform</title>
-  <meta name="description" content="Pankaj T Sharma. Fifteen years in production platform engineering, site reliability, and agentic systems on the same delivery path. Pune.">
+  <meta name="description" content="Pankaj T Sharma. Agentic systems and AI-based platform engineering, on fifteen years of production platform work. Pune.">
   <link rel="canonical" href="https://pankajtsharma.com/">
   <meta property="og:title" content="Pankaj T Sharma | DevOps · SRE · AI Platform">
-  <meta property="og:description" content="Fifteen years operating the platform teams ship on. Agentic systems run on that same path.">
+  <meta property="og:description" content="Agentic systems and AI-based platform engineering, on the platform he has run for fifteen years.">
   <meta property="og:url" content="https://pankajtsharma.com/">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +28,10 @@
     </header>
 
     <section class="hero">
-      <p class="eyebrow">Platform engineering · Site reliability · Agentic systems</p>
+      <p class="eyebrow">Agentic systems · AI platform engineering · Site reliability</p>
       <h1>Pankaj <em>T Sharma</em></h1>
-      <p class="lede">I have spent fifteen years in production. The work is the platform teams actually ship on, and the operating discipline that keeps it up. Agentic systems now run on that same path, not beside it.</p>
-      <p class="status">Open to senior platform, SRE, and agentic roles where the person who designs the system also runs it.</p>
+      <p class="lede">The recent work is agentic systems and AI-based platform engineering, on a platform I have run for fifteen years. A system that can act still has to be provisioned, released, observed, and stopped.</p>
+      <p class="status">Open to senior agentic, AI platform, and SRE roles where the person who designs the system also runs it.</p>
       <p class="meta">
         <span>Pune, India · Remote</span>
         <a href="mailto:panks028@gmail.com">panks028@gmail.com</a>
@@ -46,19 +46,19 @@
         <p class="eyebrow">About</p>
         <h2>The same job, at a larger scale.</h2>
       </div>
-      <p class="wide">I came up through Linux and cloud operations, then spent the last several years making delivery repeatable: infrastructure in code, a Kubernetes path people can use, and an on-call loop that feeds back into the design. The agentic work is the same job. A workflow that can call tools and retrieve knowledge still has to be provisioned, released, observed, and stopped.</p>
+      <p class="wide">Right now that means two things. Agentic workflows that call tools, retrieve knowledge, and stop when they should. And AI-based platform engineering: observability that explains an alarm, and autonomous healing in Harness for the alarms that already have a fix. Under that is fifteen years of the same job. Infrastructure in code, a Kubernetes path people can use, and an on-call loop that feeds back into the design.</p>
       <ol class="principles">
-        <li>
-          <h3>If it needs a ticket, it is not a platform.</h3>
-          <p>Engineers should provision, deploy, and roll back without waiting on me. Terraform, pipelines, and GitOps exist so the exception is rare, not so the happy path stays manual.</p>
-        </li>
         <li>
           <h3>Autonomy is earned.</h3>
           <p>An agent gets tool access and memory after evaluation, guardrails, and a human gate exist. Deterministic release steps stay in charge. The model does not get a private way into production.</p>
         </li>
         <li>
           <h3>Incidents are design input.</h3>
-          <p>A postmortem that only updates a runbook will happen again. The useful ones change the module, the pipeline, or the alert threshold.</p>
+          <p>A postmortem that only updates a runbook will happen again. The useful ones change the module, the pipeline, or the alert threshold. Known alarms heal themselves.</p>
+        </li>
+        <li>
+          <h3>If it needs a ticket, it is not a platform.</h3>
+          <p>Engineers should provision, deploy, and roll back without waiting on me. Terraform, pipelines, and GitOps exist so the exception is rare, not so the happy path stays manual.</p>
         </li>
       </ol>
     </section>
@@ -72,20 +72,34 @@
       <article class="case">
         <header>
           <p class="index">01</p>
-          <p class="kicker">Platform</p>
-          <h3>One way to stand an environment up</h3>
+          <p class="kicker">Agentic systems</p>
+          <h3>Agents that have to earn production</h3>
         </header>
         <div class="beats">
-          <p><span>The problem</span> The estate spans AWS, Azure, and what is still on VMware and OpenStack. Each one had its own way to stand an environment up, and the bootstrap lived in someone’s notes.</p>
-          <p><span>What I run</span> Terraform holds the shape of the environment, including remote state and drift. Ansible holds configuration, patching, and that bootstrap. Multi-AZ, recovery, and cost are part of the module, reviewed with the change.</p>
-          <p><span>The standard</span> A platform nobody can afford, or that only one person can rebuild, is not finished.</p>
+          <p><span>The problem</span> A workflow that can call tools and retrieve knowledge still has to be provisioned, released, observed, and stopped. Left to the prompt, it will not be.</p>
+          <p><span>What I run</span> Multi-agent workflows in LangGraph, LangChain, MCPs, and AgentCore. Supervisor–worker, hierarchical, and plan-and-execute when the task actually splits that way. State, memory, and tool calling are designed. Retrieval is vector search over enterprise knowledge, and an answer that cannot cite it does not ship. Evaluation, guardrails, and a human gate sit in the same CI/CD path as any other release. Cursor skills and hooks keep that path reproducible for the people writing the workflows.</p>
+          <p><span>The standard</span> The model does not get a private way into production.</p>
         </div>
-        <p class="tags">Terraform · Ansible · AWS · Azure · FinOps</p>
+        <p class="tags">LangGraph · RAG · Guardrails · Human in the loop · CI/CD</p>
       </article>
 
       <article class="case">
         <header>
           <p class="index">02</p>
+          <p class="kicker">AI platform engineering</p>
+          <h3>Operated, not just deployed</h3>
+        </header>
+        <div class="beats">
+          <p><span>The problem</span> A dashboard that does not explain the alarm is another page to ignore. A known failure that still needs a person is toil.</p>
+          <p><span>What I run</span> I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. AI observability sits on that telemetry and has to explain the alarm. Alarms with a known fix take an autonomous healing path in Harness and remediate themselves.</p>
+          <p><span>The standard</span> A novel failure still pages me. The write-up afterward changes the module or the alert, so the same page does not come back.</p>
+        </div>
+        <p class="tags">AI observability · Harness · Autonomous remediation · SLOs · OpenTelemetry</p>
+      </article>
+
+      <article class="case">
+        <header>
+          <p class="index">03</p>
           <p class="kicker">Delivery</p>
           <h3>A release path with a rollback</h3>
         </header>
@@ -99,31 +113,18 @@
 
       <article class="case">
         <header>
-          <p class="index">03</p>
-          <p class="kicker">Reliability</p>
-          <h3>Operated, not just deployed</h3>
+          <p class="index">04</p>
+          <p class="kicker">Platform</p>
+          <h3>One way to stand an environment up</h3>
         </header>
         <div class="beats">
-          <p><span>The problem</span> A dashboard that does not explain the alarm is another page to ignore. A known failure that still needs a person is toil.</p>
-          <p><span>What I run</span> I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. AI observability sits on that telemetry and has to explain the alarm. Alarms with a known fix take an autonomous healing path in Harness and remediate themselves.</p>
-          <p><span>The standard</span> A novel failure still pages me. The write-up afterward changes the module or the alert, so the same page does not come back.</p>
+          <p><span>The problem</span> The estate spans AWS, Azure, and what is still on VMware and OpenStack. Each one had its own way to stand an environment up, and the bootstrap lived in someone’s notes.</p>
+          <p><span>What I run</span> Terraform holds the shape of the environment, including remote state and drift. Ansible holds configuration, patching, and that bootstrap. Multi-AZ, recovery, and cost are part of the module, reviewed with the change.</p>
+          <p><span>The standard</span> A platform nobody can afford, or that only one person can rebuild, is not finished.</p>
         </div>
-        <p class="tags">AI observability · Harness · Autonomous remediation · SLOs · OpenTelemetry</p>
+        <p class="tags">Terraform · Ansible · AWS · Azure · FinOps</p>
       </article>
 
-      <article class="case">
-        <header>
-          <p class="index">04</p>
-          <p class="kicker">Agentic systems</p>
-          <h3>Agents that have to earn production</h3>
-        </header>
-        <div class="beats">
-          <p><span>The problem</span> A workflow that can call tools and retrieve knowledge still has to be provisioned, released, observed, and stopped. Left to the prompt, it will not be.</p>
-          <p><span>What I run</span> Multi-agent workflows in LangGraph, LangChain, MCPs, and AgentCore. Supervisor–worker, hierarchical, and plan-and-execute when the task actually splits that way. State, memory, and tool calling are designed. Retrieval is vector search over enterprise knowledge, and an answer that cannot cite it does not ship. Evaluation, guardrails, and a human gate sit in the same CI/CD path as any other release. Cursor skills and hooks keep that path reproducible for the people writing the workflows.</p>
-          <p><span>The standard</span> The model does not get a private way into production.</p>
-        </div>
-        <p class="tags">LangGraph · RAG · Guardrails · Human in the loop · CI/CD</p>
-      </article>
     </section>
 
     <section id="experience">
@@ -136,12 +137,12 @@
         <p class="when">2020 — Present<br>Pune</p>
         <div>
           <h3>Amdocs</h3>
-          <p class="role-line">Platform engineer. Delivery, reliability, and agentic workloads.</p>
+          <p class="role-line">Agentic systems and AI platform engineering. Delivery and reliability under that.</p>
           <ul>
-            <li>Own the path from a change to production: Terraform and Ansible across AWS, Azure, VMware, and OpenStack, with drift and cost visible in the review.</li>
+            <li>Put agentic workflows on the production path. LangGraph and LangChain, tool calling, retrieval, guardrails, and a human gate before anything non-deterministic is released.</li>
+            <li>Run AI-based platform engineering on the pager. AI observability explains the alarm. Harness heals the ones that already have a remediation. Postmortems change the platform.</li>
             <li>Run Kubernetes on OpenShift, EKS, and AKS so teams deploy with Helm and Argo CD, and roll back without a bridge call.</li>
-            <li>Carry the pager. SLOs, Prometheus, Grafana, and OpenTelemetry decide what we fix. AI observability and Harness heal the alarms that already have a known remediation. Postmortems change the platform.</li>
-            <li>Put agentic workflows on that path. LangGraph and LangChain, tool calling, retrieval, guardrails, and a human gate before anything non-deterministic is released.</li>
+            <li>Own the path from a change to production: Terraform and Ansible across AWS, Azure, VMware, and OpenStack, with drift and cost visible in the review.</li>
           </ul>
         </div>
       </article>
@@ -199,8 +200,12 @@
       </div>
       <dl class="skills">
         <div>
-          <dt>Platform &amp; IaC</dt>
-          <dd>Terraform, remote state, drift detection, Ansible, YAML, infrastructure automation, FinOps</dd>
+          <dt>Agentic AI</dt>
+          <dd>LangGraph, LangChain, MCPs, AgentCore, multi-agent orchestration, RAG, vector search, guardrails, tool calling, Cursor</dd>
+        </div>
+        <div>
+          <dt>AI platform engineering</dt>
+          <dd>AI observability, Harness, autonomous healing, alarm remediation, SLIs/SLOs, error budgets, Prometheus, Grafana, ELK, OpenTelemetry, on-call, MTTR, postmortems</dd>
         </div>
         <div>
           <dt>CI/CD</dt>
@@ -211,16 +216,12 @@
           <dd>EKS, AKS, OpenShift, Docker, Helm, Argo CD, Istio, RBAC, GitOps</dd>
         </div>
         <div>
+          <dt>Platform &amp; IaC</dt>
+          <dd>Terraform, remote state, drift detection, Ansible, YAML, infrastructure automation, FinOps</dd>
+        </div>
+        <div>
           <dt>Cloud</dt>
           <dd>AWS, Azure, Lambda, IAM, multi-AZ, disaster recovery, VMware, OpenStack, secrets management</dd>
-        </div>
-        <div>
-          <dt>SRE</dt>
-          <dd>SLIs/SLOs, error budgets, Prometheus, Grafana, ELK, OpenTelemetry, AI observability, Harness, autonomous healing, alarm remediation, on-call, MTTR, postmortems</dd>
-        </div>
-        <div>
-          <dt>Agentic AI</dt>
-          <dd>LangGraph, LangChain, MCPs, AgentCore, multi-agent orchestration, RAG, vector search, guardrails, tool calling, Cursor</dd>
         </div>
         <div>
           <dt>Engineering</dt>
