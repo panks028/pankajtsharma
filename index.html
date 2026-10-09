@@ -83,11 +83,14 @@
 
     <section id="work">
       <h2>Selected work</h2>
+      <p class="section-lead">Each of these is a problem I have already run in production, the way I closed it, and the standard I hold it to.</p>
 
       <article class="case">
         <p class="kicker">Platform</p>
         <h3>One way to stand an environment up</h3>
-        <p>The estate spans AWS, Azure, and what is still on VMware and OpenStack. I treat that as one provisioning problem. Terraform holds the shape of the environment, including remote state and drift. Ansible holds configuration, patching, and the bootstrap that used to live in someone’s notes. Multi-AZ and recovery are part of the module, not a follow-up project. Cost shows up in the same review as the change, because a platform nobody can afford is not finished.</p>
+        <p class="beat"><span>The problem</span> The estate spans AWS, Azure, and what is still on VMware and OpenStack. Each one had its own way to stand an environment up, and the bootstrap lived in someone’s notes.</p>
+        <p class="beat"><span>What I run</span> Terraform holds the shape of the environment, including remote state and drift. Ansible holds configuration, patching, and that bootstrap. Multi-AZ, recovery, and cost are part of the module, reviewed with the change.</p>
+        <p class="beat"><span>The standard</span> A platform nobody can afford, or that only one person can rebuild, is not finished.</p>
         <ul class="tags">
           <li>Terraform</li><li>Ansible</li><li>AWS</li><li>Azure</li><li>FinOps</li>
         </ul>
@@ -96,16 +99,20 @@
       <article class="case">
         <p class="kicker">Delivery</p>
         <h3>A release path with a rollback</h3>
-        <p>Clusters on OpenShift, EKS, and AKS only help if a team can ship without a specialist in the room. Helm and Argo CD are that path. Progressive delivery is blue-green or canary, image scanning happens before the rollout, and the service mesh and RBAC are there so production access is deliberate. Jenkins, GitLab CI, and GitHub Actions are the gates. The point is a rollback that does not require me.</p>
+        <p class="beat"><span>The problem</span> Clusters on OpenShift, EKS, and AKS only help if a team can ship without a specialist in the room.</p>
+        <p class="beat"><span>What I run</span> Helm and Argo CD are that path. Progressive delivery is blue-green or canary. Image scanning happens before the rollout. The service mesh and RBAC keep production access deliberate. Jenkins, GitLab CI, GitHub Actions, and Harness are the gates.</p>
+        <p class="beat"><span>The standard</span> The rollback does not require me.</p>
         <ul class="tags">
-          <li>Kubernetes</li><li>Argo CD</li><li>Istio</li><li>CI/CD</li><li>Trivy</li>
+          <li>Kubernetes</li><li>Argo CD</li><li>Harness</li><li>Istio</li><li>Trivy</li>
         </ul>
       </article>
 
       <article class="case">
         <p class="kicker">Reliability</p>
         <h3>Operated, not just deployed</h3>
-        <p>I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. AI observability sits on that telemetry: it has to explain the alarm, not add another dashboard. Alarms with a known fix take an autonomous healing path in Harness and remediate themselves. A novel failure still pages me. The write-up afterward changes the module or the alert, so the same page does not come back.</p>
+        <p class="beat"><span>The problem</span> A dashboard that does not explain the alarm is another page to ignore. A known failure that still needs a person is toil.</p>
+        <p class="beat"><span>What I run</span> I stay on the pager. SLIs and error budgets decide what is urgent. Prometheus and Grafana carry the metrics, ELK the logs, OpenTelemetry the traces. AI observability sits on that telemetry and has to explain the alarm. Alarms with a known fix take an autonomous healing path in Harness and remediate themselves.</p>
+        <p class="beat"><span>The standard</span> A novel failure still pages me. The write-up afterward changes the module or the alert, so the same page does not come back.</p>
         <ul class="tags">
           <li>AI observability</li><li>Harness</li><li>Autonomous remediation</li><li>SLOs</li><li>OpenTelemetry</li>
         </ul>
@@ -114,7 +121,9 @@
       <article class="case">
         <p class="kicker">Agentic systems</p>
         <h3>Agents that have to earn production</h3>
-        <p>I build multi-agent workflows with LangGraph, LangChain, MCPs, and AgentCore. Supervisor–worker, hierarchical, and plan-and-execute are patterns I use when the task actually splits that way. State, memory, and tool calling are designed, not left to the prompt. Retrieval is vector search over enterprise knowledge, and an answer that cannot cite it does not ship. Evaluation, guardrails, and a human gate sit in the same CI/CD path as any other release. Cursor skills and hooks are how that path stays reproducible for the people writing the workflows.</p>
+        <p class="beat"><span>The problem</span> A workflow that can call tools and retrieve knowledge still has to be provisioned, released, observed, and stopped. Left to the prompt, it will not be.</p>
+        <p class="beat"><span>What I run</span> Multi-agent workflows in LangGraph, LangChain, MCPs, and AgentCore. Supervisor–worker, hierarchical, and plan-and-execute when the task actually splits that way. State, memory, and tool calling are designed. Retrieval is vector search over enterprise knowledge, and an answer that cannot cite it does not ship. Evaluation, guardrails, and a human gate sit in the same CI/CD path as any other release. Cursor skills and hooks keep that path reproducible for the people writing the workflows.</p>
+        <p class="beat"><span>The standard</span> The model does not get a private way into production.</p>
         <ul class="tags">
           <li>LangGraph</li><li>RAG</li><li>Guardrails</li><li>Human in the loop</li><li>CI/CD</li>
         </ul>
